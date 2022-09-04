@@ -15,6 +15,6 @@ const getWeatherData = (lat, long, callback) => {
     //         callback(undefined, body.current);
     //     }
     // });
-    callback(undefined, weatherData.current.weather_descriptions[0] + ". It is currently " + weatherData.current.temperature + " degrees Celsius out. It feels like " + weatherData.current.feelslike + " degrees Celsius out.");
+    callback(undefined, weatherData.current.weather_descriptions[0] + ". It is currently " + weatherData.current.temperature + " degrees Celsius out. It feels like " + weatherData.current.feelslike + " degrees Celsius out.Humidity is " + weatherData.current.humidity);
 }
 module.exports = getWeatherData;
